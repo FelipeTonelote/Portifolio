@@ -1,0 +1,111 @@
+/* Estilizando a parte geral da pagina */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #E2EBF4;
+}
+
+header {
+    background-color: #487CF0;
+    padding: 20px;
+}
+
+/* Estilizando as partes especificas das classes */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo, .logo a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+}
+
+.menu a:hover {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .menu {
+        margin-top: 20px;
+    }
+    
+    .menu li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
+p{
+    text-align: justify;
+    margin-top: 10px;
+    text-indent: 20px;
+}
+
+h3{
+    font-size: 23px;
+}
+
+h4{
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+/* Estilizando detalhes da pagina sobre */
+.principal{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#titulo{
+    text-align: center;
+    font-size: 30px;
+    padding-right: 8px;
+}
+
+table {
+    width: 75%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #2C8CEA;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color: #2C8CEA;
+}

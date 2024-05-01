@@ -1,0 +1,134 @@
+/* Estilizando a parte geral da pagina */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #E2EBF4;
+}
+
+header {
+    background-color: #487CF0;
+    padding: 20px;
+}
+
+/* Estilizando as partes especificas das classes */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo, .logo a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+}
+
+.menu a:hover {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+/* Responsividade da pagina */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .menu {
+        margin-top: 20px;
+    }
+    
+    .menu li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.form-page {
+    border: solid 1px;
+    margin: 5%;
+    padding: 20px; 
+    background-color: aliceblue;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adicionando sombra */
+}
+
+/* Adicionando estilo de hover e focus aos inputs */
+.form-page input[type="text"],
+.form-page textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-page input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    width: 40%; 
+    border-radius: 5px;
+}
+
+/* Estilizando detalhes da pagina contato */
+.form-page input[type="text"]:hover,
+.form-page input[type="email"]:hover,
+.form-page textarea:hover,
+.form-page input[type="text"]:focus,
+.form-page input[type="email"]:focus,
+.form-page textarea:focus {
+    border-color: #487CF0;
+}
+
+/* Estilizando o botão */
+.form-page #botao {
+    padding: 10px 20px;
+    background-color: #487CF0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.form-page #botao:hover {
+    background-color: #355ad4;
+}
+.button-container {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 8px;
+}
+#titulo{
+    text-align: center;
+    font-size: 30px;
+    padding-right: 20px;
+}
+
